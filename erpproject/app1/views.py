@@ -8,7 +8,7 @@ from accounts.permissions import IsAdmin, IsStudent, IsTeacher
 from .serializer import CourseSerializer, CourseRegistrationSerializer, DeptSerializer, TeacherSerializer, StudentSerializer, AssignCourseSerializer, MarkSerializer, AttendanceSerializer, AttendanceUpdateSerializer, EventSerializer, CourseAttendanceSerializer, ExamSerilizer
 from rest_framework.response import Response
 from .models import Course, Student, CourseRegistration, Teacher, Dept, AssignCourse, Marks, Attendance, Events, Exams
-
+import os
 
 class AddCourse(APIView):
     permission_classes = [IsAuthenticated, IsAdmin]
